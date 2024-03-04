@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados do Projeto Java</title>
+</head>
+<body>
+
+    <h1>Resultados do Projeto Java</h1>
+    <div id="results"></div>
+
+</body>
+
+<script>
+    window.onload = function() {
+        fetchResults();
+    };
+
+    function fetchResults() {
+        fetch('http://localhost:3000/results')
+            .then(response => response.text())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao buscar resultados:', error));
+    }
+</script>
+
+
+</html>
