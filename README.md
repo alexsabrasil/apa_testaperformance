@@ -19,32 +19,30 @@ Para executar o projeto, basta replicar o código apresentado neste repositório
 
 | Método      | Descrição                                                                         | Melhor Performance                                                        |
 |-------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| ArrayList<> | Implementa uma lista redimensionável, matendo a ordem de inserção dos elementos.  | Depende do tipo de operação realizada e do tamanho dos dados. Para operações que envolvem acesso por índice, ArrayList geralmente tem melhor performance.|                                                                           
-| HashSet<>   | Implementa um conjunto que não permite elementos duplicados, utilizando uma tabela de dispersão para armazenar os elemetos. Não mantém a ordem de inserção.| Geralmente tem melhor performance para operações de busca e inserção de elementos únicos, especialmente quando a busca é realizada com frequência. |
+| ArrayList<> | Implementar uma lista redimensionável, mantendo a ordem de inserção dos elementos.  | Depende do tipo de operação realizada e do tamanho dos dados. Para operações que envolvem acesso por índice, ArrayList geralmente tem melhor performance.|                                                                           
+| HashSet<>   | Implementar um conjunto que não permite elementos duplicados, utilizando uma tabela de dispersão para armazenar os elementos. Não mantém a ordem de inserção.| Geralmente tem melhor performance para operações de busca e inserção de elementos únicos, especialmente quando a busca é realizada com frequência. |
 
 | Método      | Testando 50,000 elementos         | Tempo gasto                         |
 |-------------|-----------------------------------|-------------------------------------|
-| ArrayList<> |                                   | 1971 ms                             |                                                                           
-| HashSet<>   |                                   | 18 ms                               |
+| ArrayList<> |                                   | 2223ms                             |                                                                           
+| HashSet<>   |                                   | 31ms                               |
 
 | Método      | Testando 100,000 elementos        | Tempo gasto                         |
 |-------------|-----------------------------------|-------------------------------------|
-| ArrayList<> |                                   | 1031 ms                             |                                                                           
-| HashSet<>   |                                   | 21 ms                               |
+| ArrayList<> |                                   | 11124ms                             |                                                                           
+| HashSet<>   |                                   | 25ms                               |
 
 | Método      | Testando 150,000 elementos        | Tempo gasto                         |
 |-------------|-----------------------------------|-------------------------------------|
-| ArrayList<> |                                   | 25,547 ms                           |                                                                           
-| HashSet<>   |                                   | 18 ms                               |
+| ArrayList<> |                                   | 26562ms                           |                                                                           
+| HashSet<>   |                                   | 26 ms                               |
 
 | Método      | Testando 200,000 elementos        | Tempo gasto                         |
 |-------------|-----------------------------------|-------------------------------------|
-| ArrayList<> |                                   | 53,349 ms                           |                                                                     
-| HashSet<>   |                                   | 22 ms                               |
+| ArrayList<> |                                   | 51405 ms                           |                                                                     
+| HashSet<>   |                                   | 29ms                               |
 
 ![APA-Resultados-TP-VSCODE](https://github.com/alexsabrasil/apa_testaperformance/assets/113733583/023a2722-9dd3-4206-aec5-8f86e2f6078a)
-
-
 
 
 ## Melhorias
@@ -58,7 +56,7 @@ Para executar o projeto, basta replicar o código apresentado neste repositório
 
 ##
 
-### Sugestoões serão bem-vindas!
+### Sugestões serão bem-vindas!
 
 Este projeto está aberto a sugestões e contribuições para melhorias e otimizações.
 Entre em contato caso tenha alguma sugestão ou dúvida. 
