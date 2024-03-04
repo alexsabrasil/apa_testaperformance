@@ -1,46 +1,67 @@
 # APA - Atividade de Aprendizagem - Programação Orientada a Objetos
-- Centro Universitário Unifatecie 
-- Curso: Bacharelado em Sistema de Informação
-- Período: 3 semestre
+Este repositório contém o código desenvolvido como parte da Atividade de Aprendizagem (APA) do Curso de Bacharelado em Sistema de Informação, do Centro Universitário Unifatecie, no terceiro semestre.
 
 ##
 
-### apa_testeperformance
+## Descrição do Projeto
 
-#### Em um ambiente de desenvolvimento, o Gerente de Projetos chega para o líder do setor de desenvolvimento e entrega a ele uma solicitação: Desenvolver um código na linguagem de programação Orientada a Objetos Java, com uma classe TestaPerformance para a inserção de 30 mil números  em um ArrayList. 
+O projeto "apa_testeperformance" foi desenvolvido em resposta a uma solicitação do Gerente de Projetos. Ele solicitou o desenvolvimento de um código em Java, com ênfase em Programação Orientada a Objetos, para avaliar a performance de diferentes estruturas de dados. O objetivo é inserir 30 mil números em um ArrayList e em um HashSet, respectivamente, e cronometrar o tempo gasto em cada caso.
 
-## 
+Após o desenvolvimento do código, o analista de teste foi encarregado de avaliar sua performance e preencher uma tabela com os resultados. Esta tabela inclui os seguintes campos: "Métodos", "Descrição" e "Melhor Performance", para identificar qual estrutura de dados apresenta o melhor desempenho.
 
-#### Deverá usar um método System para cronometrar o tempo gasto:
-#### Deverá usar os seguintes Arrays em sua implementação que deverão ser testadas separadamente:
+##
 
-- Collection<Integer> teste = new ArrayList<>();
-- Collection<Integer> teste = new HashSet<>();
+## Implementação e Testes
 
-## 
+Para executar o projeto, basta replicar o código apresentado neste repositório em uma IDE de desenvolvimento como o Visual Studio Code. Realize testes variando os valores de entrada (30 mil, 50 mil, 100 mil, 150 mil e 200 mil) para analisar o desempenho de cada estrutura de dados.
 
-###### Depois que foi desenvolvido o programa, o gerente de projetos solicitou ao analista de teste, que testasse o código do programa que o desenvolvedor havia criado para um teste de performance. Entregou também ao analista uma tabela em branco contendo os seguintes campos: "Métodos", "Descrição" e "Melhor Performance", para que o analista preenchesse com todos os métodos relacionados ao código da classe TestaPerformance e também com a descrição do que cada método realiza dentro do programa e identificar qual dos arrays apresentará a melhor performance.
+## Resultados
 
-- código: TestaPperformance
+| Método      | Descrição                                                                         | Melhor Performance                                                        |
+|-------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| ArrayList<> | Implementa uma lista redimensionável, matendo a ordem de inserção dos elementos.  | Depende do tipo de operação realizada e do tamanho dos dados. Para operações que envolvem acesso por índice, ArrayList geralmente tem melhor performance.|                                                                           
+| HashSet<>   | Implementa um conjunto que não permite elementos duplicados, utilizando uma tabela de dispersão para armazenar os elemetos. Não mantém a ordem de inserção.| Geralmente tem melhor performance para operações de busca e inserção de elementos únicos, especialmente quando a busca é realizada com frequência. |
 
-## 
+| Método      | Testando 50,000 elementos         | Tempo gasto                         |
+|-------------|-----------------------------------|-------------------------------------|
+| ArrayList<> |                                   | 1971 ms                             |                                                                           
+| HashSet<>   |                                   | 18 ms                               |
 
-###### Criar a implementação do código, os testes do conteúdo apresentado (código do programa da classe TestaPerformance e a tabela para o preenchimento).
+| Método      | Testando 100,000 elementos        | Tempo gasto                         |
+|-------------|-----------------------------------|-------------------------------------|
+| ArrayList<> |                                   | 1031 ms                             |                                                                           
+| HashSet<>   |                                   | 21 ms                               |
 
-###### Replique o código apresentado na figura anterior em uma IDE de desenvolvimento como Visual Studio. Faça pesquisas alterando os valores de 30 mil para 50 mil, 100 mil, 150 mil e 200 mil e verifique o tempo gasto por cada um dos arrays exigidos para a implementação separadamente, identificando assim qual deles apresentará a melhor performance.
+| Método      | Testando 150,000 elementos        | Tempo gasto                         |
+|-------------|-----------------------------------|-------------------------------------|
+| ArrayList<> |                                   | 25,547 ms                           |                                                                           
+| HashSet<>   |                                   | 18 ms                               |
 
-## 
+| Método      | Testando 200,000 elementos        | Tempo gasto                         |
+|-------------|-----------------------------------|-------------------------------------|
+| ArrayList<> |                                   | 53,349 ms                           |                                                                     
+| HashSet<>   |                                   | 22 ms                               |
 
-###### Responda na tabela qual método dos arrays implementados no código, apresenta a melhor performance e identifique também qual é a funcionalidade de cada método (ArrayList<>() e HashSet<>())  contidos na tabela abaixo:
-
-
-- Método:
-- Descrição:
-- Melhor Performance:
+![APA-Resultados-TP-VSCODE](https://github.com/alexsabrasil/apa_testaperformance/assets/113733583/023a2722-9dd3-4206-aec5-8f86e2f6078a)
 
 
-- ArrayList<>()
 
-- HashSet<>()
+
+## Melhorias
+
+- Pretendo criar uma página simples que irá exibir os resultados.
+
+##
+
+### Autora
+- Alexsandra Tavares
+
+##
+
+### Sugestoões serão bem-vindas!
+
+Este projeto está aberto a sugestões e contribuições para melhorias e otimizações.
+Entre em contato caso tenha alguma sugestão ou dúvida. 
+  
 
 
