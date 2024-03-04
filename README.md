@@ -42,7 +42,7 @@ Para executar o projeto, basta replicar o código apresentado neste repositório
 | ArrayList<> |                                   | 51405 ms                           |                                                                     
 | HashSet<>   |                                   | 29ms                               |
 
-![APA-Resultados-TP-VSCODE](https://github.com/alexsabrasil/apa_testaperformance/assets/113733583/023a2722-9dd3-4206-aec5-8f86e2f6078a)
+![APA-Resultados2-TP-VSCODE](https://github.com/alexsabrasil/apa_testaperformance/assets/113733583/098698fb-ee9b-4bb9-a86d-270923aa6dac)
 
 
 ## Melhorias
